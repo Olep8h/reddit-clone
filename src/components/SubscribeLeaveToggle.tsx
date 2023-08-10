@@ -34,7 +34,11 @@ const SubscribeLeaveToggle = ({
         },
         onError: (err) => {
             if (err instanceof AxiosError) {
+<<<<<<< HEAD
                 if (err.response?.status === 401) {    
+=======
+                if (err.response?.status === 401) {
+>>>>>>> origin/main
                     return loginToast()
                 }
             }
