@@ -4,6 +4,7 @@ import {Icons} from "@/components/Icons";
 import {buttonVariants} from "@/components/ui/Button";
 import {getAuthSession} from "@/lib/auth";
 import {UserAccountNav} from "@/components/UserAccountNav";
+import SearchBar from "@/components/SearchBar";
 
 const Navbar = async () => {
 
@@ -18,6 +19,7 @@ const Navbar = async () => {
                     <p className='hidden text-zinc-700 text-sm font-medium md:block'>Breadit</p>
                 </Link>
                 {/* search */}
+                <SearchBar/>
                 {session ? (
                     <UserAccountNav user={session.user}/>
                 ) : (
